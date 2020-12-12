@@ -1,0 +1,578 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (México) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+SDLG_REGISTROMEDICOS DIALOGEX 0, 0, 428, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Consultorio medico"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        TEX_NombreMedico,75,49,142,14,ES_AUTOHSCROLL
+    EDITTEXT        TEX_Cedula,75,68,47,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",BTM_ImageMedic,"Static",SS_BITMAP | SS_CENTERIMAGE,249,48,170,116,WS_EX_DLGMODALFRAME
+    LTEXT           "Nombre del medico",IDC_STATIC,7,52,61,8
+    LTEXT           "Cedula profesional",IDC_STATIC,7,70,60,8
+    COMBOBOX        CB_Especialidades,75,87,127,66,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Especialidad",IDC_STATIC,7,90,40,8
+    PUSHBUTTON      "Cargar imagen",BTN_CargarImagen,306,168,52,14
+    LTEXT           "Telefono",IDC_STATIC,7,130,29,8
+    EDITTEXT        TEX_Telefono,45,128,106,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Numero de consultorio",IDC_STATIC,7,111,72,8
+    CONTROL         "1",RD_Consultorio1,"Button",BS_AUTORADIOBUTTON,89,109,20,10
+    CONTROL         "2",RD_Consultorio2,"Button",BS_AUTORADIOBUTTON,119,109,20,10
+    CONTROL         "3",RD_Consultorio3,"Button",BS_AUTORADIOBUTTON,150,109,20,10
+    CTEXT           "REGISTRO DE MEDICOS",IDC_STATIC,162,1,88,13,SS_CENTERIMAGE | WS_BORDER
+    PUSHBUTTON      "Dar de Alta",BTN_DarAltaMedic,285,207,100,30
+    CONTROL         "Mañana",RD_Manana,"Button",BS_AUTORADIOBUTTON,55,177,41,10
+    CONTROL         "Tarde",RD_Tarde,"Button",BS_AUTORADIOBUTTON,136,177,35,10
+    LTEXT           "6AM a 13PM",IDC_STATIC,51,190,40,8
+    LTEXT           "13PM a 19PM",IDC_STATIC,133,189,44,8
+    LTEXT           "Aqui se dan de alta los medicos, procura llenar todos los campos antes de dar de alta",IDC_STATIC,75,21,272,8
+    LTEXT           "Horarios de los Medicos",IDC_STATIC,76,158,76,8
+    LTEXT           "__________________________________________",IDC_STATIC,28,199,232,8
+    CONTROL         "Lunes",CHK_Lunes,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,216,35,10
+    CONTROL         "Martes",CHK_Martes,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,216,38,10
+    CONTROL         "Jueves",CHK_Jueves,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,216,39,10
+    CONTROL         "Miercoles",CHK_Miercoles,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,216,45,10
+    CONTROL         "Viernes",CHK_Viernes,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,189,216,39,10
+    PUSHBUTTON      "Cargar Informacion",BTN_CargarInformacion,312,7,109,14
+END
+
+SDLG_REGISTROPACIENTE DIALOGEX 0, 0, 372, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Consultorio medico"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nombre del paciente",IDC_STATIC,32,52,66,8
+    LTEXT           "Genero",IDC_STATIC,72,63,24,8
+    LTEXT           "Telefono",IDC_STATIC,69,81,29,8
+    EDITTEXT        TEX_Pacientes,100,48,146,14,ES_AUTOHSCROLL
+    EDITTEXT        TEX_TelefonoPaciente,102,78,146,14,ES_AUTOHSCROLL
+    CONTROL         "Masculino",RD_Masculino,"Button",BS_AUTORADIOBUTTON,103,63,47,10
+    CONTROL         "Femenino ",RD_Femenino,"Button",BS_AUTORADIOBUTTON,157,63,49,10
+    CONTROL         "",TEX_FechaPaciente,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,103,105,100,15
+    LTEXT           "Fecha de nacimiento",IDC_STATIC,37,107,66,8
+    EDITTEXT        TEX_Edad,105,130,27,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Edad",IDC_STATIC,82,132,17,8
+    LTEXT           "Primer medico que lo atendio",IDC_STATIC,9,154,92,8
+    COMBOBOX        CB_PrimerMedic,105,152,126,59,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Descripción ",IDC_STATIC,66,175,39,8
+    EDITTEXT        TEX_Descripcion,105,173,123,42,ES_AUTOHSCROLL
+    CTEXT           "REGISTRO DE PACIENTE",IDC_STATIC,124,7,110,12,WS_BORDER
+    PUSHBUTTON      "Dar de alta",BTN_DarAltaPaciente,259,189,83,27
+    LTEXT           "Aqui se daran de alta los pacientes procura llenar todos los datos correspondientes",IDC_STATIC,51,19,266,8
+    LTEXT           "Apellidos del paciente:",EST_APELLIDOPACIENTE,21,37,72,8
+    EDITTEXT        TEX_Pacientes2,99,33,146,14,ES_AUTOHSCROLL
+END
+
+SDLG_REGISTROCONSULTAS DIALOGEX 0, 0, 519, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Consultorio medico"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Paciente",IDC_STATIC,7,59,28,8
+    LTEXT           "Medico",IDC_STATIC,7,88,23,8
+    COMBOBOX        CB_PacientesConsul,93,55,173,58,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_MedicoConsul,93,83,174,79,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Horario ",EST_HORARIORE,76,213,26,8,NOT WS_VISIBLE
+    LTEXT           "Especialidad del medico",IDC_STATIC,7,73,75,8
+    COMBOBOX        CB_EspecialidadesConsul,93,69,172,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Fecha:",EST_FechaRE,7,191,23,8,NOT WS_VISIBLE
+    CONTROL         "",TEX_FechaConsul,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | NOT WS_VISIBLE | WS_TABSTOP,33,187,156,15
+    CTEXT           "REGISTRO DE CONSULTA",IDC_STATIC,164,7,90,11,WS_BORDER
+    CONTROL         "",BTM_ImgMedCon,"Static",SS_BITMAP | SS_CENTERIMAGE,321,80,150,118,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Dar de Alta",BTN_DarAltaCita,412,205,99,31
+    LTEXT           "Hora",EST_HORAB,7,227,16,8,NOT WS_VISIBLE
+    LTEXT           "Minutos",EST_MINUTOSB,77,226,26,8,NOT WS_VISIBLE
+    COMBOBOX        CB_Minutos,104,224,48,50,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_Hora,24,224,48,61,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Aqui se asignara una cita respecto al doctor y al cliente dados de alta",IDC_STATIC,104,23,222,8
+    PUSHBUTTON      "",BTN_Despliegue,270,71,11,9,0,WS_EX_CLIENTEDGE
+    LTEXT           "",EST_Consultorio,7,107,78,15,NOT WS_VISIBLE,WS_EX_DLGMODALFRAME
+    LTEXT           "",EST_ESPECIALIDAD,97,72,166,8,NOT WS_VISIBLE
+    LTEXT           "",EST_MEDICOS,96,85,166,8,NOT WS_VISIBLE
+    PUSHBUTTON      "",BTN_Despliegue2,270,85,11,9,NOT WS_VISIBLE,WS_EX_CLIENTEDGE
+    LTEXT           "Consultorio",EST_InfoConsultorio,27,101,37,8,NOT WS_VISIBLE
+    LTEXT           "Lunes",IDC_STATIC,17,132,20,8
+    LTEXT           "Martes",IDC_STATIC,67,132,23,8
+    LTEXT           "Miercoles",IDC_STATIC,114,133,30,8
+    LTEXT           "Jueves",IDC_STATIC,169,133,24,8
+    LTEXT           "Viernes",IDC_STATIC,222,133,24,8
+    LTEXT           "",EST_Martes,55,145,43,16,NOT WS_VISIBLE,WS_EX_DLGMODALFRAME
+    LTEXT           "",EST_Miercoles,107,146,43,16,NOT WS_VISIBLE,WS_EX_DLGMODALFRAME
+    LTEXT           "",EST_Jueves,157,146,43,16,NOT WS_VISIBLE,WS_EX_DLGMODALFRAME
+    LTEXT           "",EST_Viernes,211,146,43,16,NOT WS_VISIBLE,WS_EX_DLGMODALFRAME
+    LTEXT           "",EST_Lunes,7,146,43,16,NOT WS_VISIBLE,WS_EX_DLGMODALFRAME
+    LTEXT           "Disponibilidad del doctor en la semana",EST_Disponibilidad,108,119,151,13,WS_BORDER
+    LTEXT           "MAÑANA",EST_DIA,167,220,52,16,SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "TARDE",EST_NOCHE,167,220,52,16,SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "Turno",EST_TURNO,169,211,20,8,NOT WS_VISIBLE
+    EDITTEXT        TEX_NUMERODECITA,308,222,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Numero de cita",IDC_STATIC,256,225,49,8
+END
+
+SDLG_ESPECIALIDADES DIALOGEX 0, 0, 395, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Especialidades"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nueva Especialidad",IDC_STATIC,7,51,62,8
+    PUSHBUTTON      "Aceptar",BTN_ACEPTARE,269,163,50,14
+    PUSHBUTTON      "Volver",BTN_VOLVERE,326,163,50,14
+    EDITTEXT        TEX_NewEspecialidad,87,50,163,14,ES_AUTOHSCROLL
+    LTEXT           "Descripcion",IDA,7,78,37,8
+    EDITTEXT        TEX_DescripcionEspecialidad,87,73,166,90,ES_AUTOHSCROLL
+    CTEXT           "Alta Especialidades",IDC_STATIC,154,8,84,12,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "Aqui podras añadir una nueva especialidad con una descripcion detallada, esta formara parte del sistema",IDC_STATIC,34,22,336,8
+END
+
+SGDL_CitaMedico DIALOGEX 0, 0, 339, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Consulta Cita/Medico y Mes"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Guardar",BTN_ACEPTARMEDICOMES,101,143,86,28
+    LTEXT           "Nombre Medico",IDC_STATIC,6,68,50,8
+    LTEXT           "Mes",IDC_STATIC,8,89,14,8
+    COMBOBOX        CB_MEDICOSYMES,62,67,128,55,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_MesesFiltro,32,86,71,51,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Medico y Mes",IDC_STATIC,134,7,60,20,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "Aquí se daran de alta en la base de datos .txt",IDC_STATIC,91,29,148,8
+END
+
+SDLG_EspecialidadSemanaMes DIALOGEX 0, 0, 387, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Consulta de cita/Especialidad y semana del mes"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Guardar",BTN_ESPECIALIDADGUARDAR,171,132,74,25
+    CTEXT           "Especialidad y semana del mes",IDC_STATIC,130,7,140,17,SS_CENTERIMAGE | WS_BORDER
+    COMBOBOX        CB_EspecialidadFiltro,65,66,134,61,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_MESFILTRO3,65,92,50,52,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_SEMANAFILTRO3,65,116,30,41,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Aqui se buscaran las citas debido a su especialidad y a la semana del mes",IDC_STATIC,85,26,234,8
+    LTEXT           "Especialidad",IDC_STATIC,7,68,40,8
+    LTEXT           "Mes",IDC_STATIC,7,96,14,8
+    LTEXT           "Semana",IDC_STATIC,6,120,26,8
+END
+
+SDLG_ConsultaSemanaMes DIALOGEX 0, 0, 347, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Consulta Cita/Semana del mes"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Guardar",BTM_ACEPTARSEMANAMES,103,130,75,27
+    COMBOBOX        CB_MesConsul2,67,48,50,52,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_SemanaConsul2,67,72,30,41,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Mes",IDC_STATIC,9,52,14,8
+    LTEXT           "Semana",IDC_STATIC,7,76,26,8
+    CTEXT           "Semana del mes",IDC_STATIC,150,7,80,21,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "Aqui se colocara la esemana del mes y se hara una busqueda",IDC_STATIC,97,28,196,8
+END
+
+SDLG_RegistroCita DIALOGEX 0, 0, 433, 277
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro Citas"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",INF_HORAREGISTRO,130,82,178,8
+    CONTROL         "",BTM_IMAGENTEGISTRO,"Static",SS_BITMAP | SS_CENTERIMAGE,296,187,130,83,WS_EX_DLGMODALFRAME
+    RTEXT           "Nombre del Paciente:",IDC_STATIC,40,153,69,8
+    RTEXT           "Especialidad:",IDC_STATIC,63,124,42,8
+    RTEXT           "Consultorio:",IDC_STATIC,62,112,40,8
+    RTEXT           "Minutos:",IDC_STATIC,73,99,28,8
+    RTEXT           "Numero de la cita:",IDC_STATIC,7,36,59,8
+    DEFPUSHBUTTON   "Cancelar Cita",IDOK,161,238,87,32
+    PUSHBUTTON      "Terminar Cita",IDCANCEL,7,238,87,32
+    COMBOBOX        CB_Cedula,78,34,217,79,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Fecha:",IDC_STATIC,72,69,23,8
+    RTEXT           "Hora:",IDC_STATIC,77,84,19,8
+    RTEXT           "Nombre Medico:",IDC_STATIC,53,139,52,8
+    RTEXT           "Telefono Paciente:",IDC_STATIC,47,181,61,8
+    RTEXT           "Estado de la consulta:",IDC_STATIC,40,194,72,8
+    LTEXT           "",INF_PACIENTEREGISTRO,130,153,148,8
+    LTEXT           "",INF_ESPECIALIDADREGISTRO,130,124,174,8
+    LTEXT           "",INF_CONSULTORIOREGISTRO,130,112,84,8
+    LTEXT           "",INF_MINUTOSREGISTRO,130,99,150,8
+    LTEXT           "",INF_FECHAREGISTRO,130,65,151,8
+    LTEXT           "",INF_MEDICOREGISTRO,130,139,146,8
+    LTEXT           "",INF_TELEFONOREGISTRO,130,181,151,8
+    LTEXT           "",INF_ESTADOREGISTRO,130,194,156,8
+    PUSHBUTTON      "",BTN_DespliegueREGISTROS,301,35,11,9,0,WS_EX_CLIENTEDGE
+    LTEXT           "",INFAPELLIDOSPACIENTE,122,168,151,8
+    RTEXT           "Apellido del Paciente:",IDC_STATIC,37,167,69,8
+END
+
+SDLG_INCIARSESION DIALOGEX 0, 0, 445, 107
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "INICIAR SESION"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        EDIT_NOMBREINICIAR,97,28,324,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Iniciar",BTN_INICIARSESION,388,86,50,14
+    LTEXT           "Nombre",IDC_STATIC,47,32,26,8
+    LTEXT           "Contraseña",IDC_STATIC,46,50,38,8
+    EDITTEXT        EDIT_CONTRASENAINICIAR2,96,47,324,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+SDLG_ALTASBAJASCAMBIOS DIALOGEX 0, 0, 1031, 370
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ALTAS BAJAS Y CAMBIOS"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Mañana",RAD_NuevoManana,"Button",BS_AUTORADIOBUTTON,303,140,41,10
+    PUSHBUTTON      "Volver a Medicos",BTN_VOLVERMEDICOS,948,326,76,37
+    COMBOBOX        CB_EspecialidadALTAS,45,36,152,74,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_MedicosALTAS,276,36,153,62,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_PacienteALTAS,496,35,153,64,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Especialidad",IDC_STATIC,101,28,40,8
+    LTEXT           "Medicos",IDC_STATIC,334,26,26,8
+    LTEXT           "Pacientes",IDC_STATIC,553,26,32,8
+    LTEXT           "Registros",IDC_STATIC,880,24,31,8
+    COMBOBOX        CB_RegistrosALTAS,815,34,153,69,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Modificar",BTN_MODIFICARESPECIALIDADES,47,165,62,25
+    PUSHBUTTON      "Eliminar",BTN_ELIMINARESPECIALIDAD,132,164,63,25
+    PUSHBUTTON      "Modificar",BTN_MODIFICARMEDICOS,276,314,62,25
+    PUSHBUTTON      "Eliminar",BTN_ELIMINARMEDICO,372,314,63,25
+    LTEXT           "Nueva Especialidad:",EST_NuevaEspecialidad,7,70,65,8
+    LTEXT           "Nueva Descripcion:",EST_NuevaDescripcion,7,94,62,8
+    EDITTEXT        TEX_NuevaEspecialidad,80,69,117,14,ES_AUTOHSCROLL
+    EDITTEXT        TEX_NuevaDescripcion,79,93,117,40,ES_AUTOHSCROLL
+    LTEXT           "----------------",IDC_STATIC,216,38,44,8
+    LTEXT           "----------------",IDC_STATIC,441,38,44,8
+    LTEXT           "----------------",IDC_STATIC,694,36,44,8
+    LTEXT           "Nuevo Nombre:",EST_NuevoNombreMedico,250,68,51,8
+    LTEXT           "Nuevo Telefono:",EST_NuevoTelefonoMedico,246,126,54,8
+    LTEXT           "Nuevo consultorio:",EST_NuevoConsultorioMedico,250,106,61,8
+    LTEXT           "Nueva Especialidad:",EST_NuevoEspecialidadMedico,237,87,65,8
+    LTEXT           "Nuevo horario:",EST_NuevoHorarioMedico,250,141,49,8
+    LTEXT           "Nuevos dias en que trabaja:",EST_NuevoDiasMedico,250,156,92,8
+    PUSHBUTTON      "Cargar Nueva Foto",BTN_CARGARNUEVAFOTOMEDICO,273,291,158,14
+    CONTROL         "",IMG_NUEVAIMAGENMEDICO,"Static",SS_BITMAP | SS_CENTERIMAGE,294,180,122,102,WS_EX_DLGMODALFRAME
+    LTEXT           "Nuevo Paciente:",EST_NUEVOPACIENTE,478,56,54,8
+    LTEXT           "Nuevo Genero:",EST_NUEVOGENERO,478,84,50,8
+    LTEXT           "Nueva Fecha de Nacimiento:",EST_NUEVAFECHANACIMIENTO,478,98,92,8
+    LTEXT           "Nueva Edad:",EST_NUEVAEDAD,478,113,42,8
+    LTEXT           "Nuevo Medico recomentado:",EST_NUEVOMEDICORECOMENDADO,478,129,92,8
+    LTEXT           "Nueva Descripcion:",EST_NUEVADESCRIPCIONPA,478,143,62,8
+    PUSHBUTTON      "Modificar",BTN_MODIFICARPACIENTES,530,207,62,25
+    PUSHBUTTON      "Eliminar",BTN_ELIMINARPACIENTE,626,207,63,25
+    LTEXT           "Nuevo Paciente:",EST_NuevoPacienteRe,753,58,54,8
+    LTEXT           "Nueva Especialidad:",EST_NuevoEspecialidadRe,753,71,65,8
+    LTEXT           "Nuevo Medico:",EST_NuevoMedicoRe,753,85,48,8
+    LTEXT           "Consultorio:",IDC_STATIC,754,110,40,8
+    LTEXT           "",ESTNUEVOCONSULTORIORE,757,121,46,21,WS_BORDER
+    LTEXT           "Lunes",IDC_STATIC,760,150,20,8
+    LTEXT           "Martes",IDC_STATIC,811,151,23,8
+    LTEXT           "Miercoles",IDC_STATIC,870,151,30,8
+    LTEXT           "Jueves",IDC_STATIC,927,150,24,8
+    LTEXT           "Viernes",IDC_STATIC,978,150,24,8
+    LTEXT           "",EST_NUEVOLUNES,745,163,46,21,WS_BORDER
+    LTEXT           "",EST_NUEVOMARTES,799,163,46,21,WS_BORDER
+    LTEXT           "",EST_NUEVOMIERCOLES,861,163,46,21,WS_BORDER
+    LTEXT           "",EST_NUEVOJUEVES,917,163,46,21,WS_BORDER
+    LTEXT           "",EST_NUEVOVIERNES,975,163,46,21,WS_BORDER
+    LTEXT           "Horario:",IDC_STATIC,978,264,27,8
+    COMBOBOX        CB_NuevaHora,769,277,48,46,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_NuevoMinutos,874,276,48,46,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Mañana",EST_HORARIOMANANA,970,273,46,21,NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "Hora:",IDC_STATIC,744,279,19,8
+    LTEXT           "Minutos:",IDC_STATIC,841,278,28,8
+    PUSHBUTTON      "Modificar",BTN_MODIFICARREGISTROS,762,302,62,25
+    PUSHBUTTON      "Eliminar",BTN_ELIMINARREGISTRO,858,302,63,25
+    EDITTEXT        TEX_NuevoNombreMedico,306,63,117,14,ES_AUTOHSCROLL
+    EDITTEXT        TEX_NuevoTelefonoMedico,306,122,117,14,ES_AUTOHSCROLL
+    CONTROL         "3",RA_NuevoConsultorio3,"Button",BS_AUTORADIOBUTTON,389,104,20,10
+    CONTROL         "2",RA_NuevoConsultorio2,"Button",BS_AUTORADIOBUTTON,351,104,20,10
+    CONTROL         "1",RA_NuevoConsultorio1,"Button",BS_AUTORADIOBUTTON,312,104,20,10
+    COMBOBOX        CB_NuevasEspecialidadMedico,306,84,113,48,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Lunes",CHECK_LUNESMEDICOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,243,170,35,10
+    CONTROL         "Martes",CHECK_MARTESMEDICOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,287,170,38,10
+    CONTROL         "Miercoles",CHECK_MIERCOLESMEDICOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,325,170,45,10
+    CONTROL         "Jueves",CHECK_JUEVESMEDICOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,371,170,39,10
+    CONTROL         "Viernes",CHECK_VIERNESMEDICOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,170,39,10
+    EDITTEXT        TEX_NuevoPaciente,532,52,117,14,ES_AUTOHSCROLL
+    EDITTEXT        TEX_NuevaEdad,522,110,46,14,ES_AUTOHSCROLL
+    EDITTEXT        TEX_NuevaDescripcionPa,542,141,100,54,ES_AUTOHSCROLL
+    COMBOBOX        CB_NuevaMedicoRecomendadoPa,571,126,113,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Femenino",RAD_NUEVOFEMENINO,"Button",BS_AUTORADIOBUTTON,597,85,47,10
+    CONTROL         "Masculino",RAD_NUEVOMASCULINO,"Button",BS_AUTORADIOBUTTON,540,85,47,10
+    CONTROL         "",DATE_FechaNacimientoPaciente,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,572,95,100,15
+    COMBOBOX        CB_NuevoPacienteRe,810,56,135,53,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_NuevoEspecialidadRe,819,70,145,49,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CB_NuevoMedicoRe,802,84,135,46,CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",BTN_NuevoDespliegue,973,73,9,9
+    PUSHBUTTON      "",BTN_NuevoDespliegue2,941,86,9,9,NOT WS_VISIBLE
+    LTEXT           "Telefono Paciente:",EST_TELEFONOPACIENTE,478,70,61,8
+    EDITTEXT        TEX_NuevoTelefonoPaciente,541,70,105,14,ES_AUTOHSCROLL
+    LTEXT           "Estático",EST_nuevaEspecialidad2,824,73,130,8,NOT WS_VISIBLE
+    CONTROL         "",DATE_NUEVAFECHA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,839,204,172,15
+    LTEXT           "Nueva Fecha de consulta:",IDC_STATIC,753,206,84,8
+    LTEXT           "Tarde",EST_HORARIOTARDE,970,273,46,21,NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "Tarde",RAD_NuevoTarde,"Button",BS_AUTORADIOBUTTON,351,140,35,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    SDLG_REGISTROMEDICOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 421
+        VERTGUIDE, 171
+        VERTGUIDE, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    SDLG_REGISTROPACIENTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    SDLG_REGISTROCONSULTAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 511
+        VERTGUIDE, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    SDLG_ESPECIALIDADES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 388
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    SGDL_CitaMedico, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    SDLG_EspecialidadSemanaMes, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    SDLG_ConsultaSemanaMes, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    SDLG_RegistroCita, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 426
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    SDLG_INCIARSESION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 438
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    SDLG_ALTASBAJASCAMBIOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1024
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 363
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+SDLG_REGISTROMEDICOS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SDLG_REGISTROPACIENTE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SDLG_REGISTROCONSULTAS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SDLG_ESPECIALIDADES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SGDL_CitaMedico AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SDLG_EspecialidadSemanaMes AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SDLG_ConsultaSemanaMes AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SDLG_RegistroCita AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SDLG_INCIARSESION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SDLG_ALTASBAJASCAMBIOS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Registro de Medicos"
+    BEGIN
+        MENUITEM "Añadir Nueva Especialidad",   ID_ESPECIALIDAD
+        MENUITEM "Añadir Nuevo Medico",         ID_REGISTROSMEDICOS
+    END
+    MENUITEM "Registro de pacientes",       ID_REGISTRODEPACIENTES
+    MENUITEM "Registro de citas",           ID_REGISTROCITAS
+    POPUP "Consulta de citas"
+    BEGIN
+        MENUITEM "Medico y Mes",                ID_CONSULTADECITAS_MEDICOYMES
+        MENUITEM "Semana del mes ",             ID_CONSULTADECITAS_SEMANAYMES
+        MENUITEM "Especialidad y Semana del mes", ID_CONSULTADECITAS_ESPECIALIDADYSEMANADELMES
+        MENUITEM "Consultas de Citas",          ID_ConsultaCitas2
+        MENUITEM "Bajas y Cambios",             40015
+    END
+    POPUP "Salir"
+    BEGIN
+        MENUITEM "Guardar datos y Salir",       ID_GuardarSALIR
+    END
+END
+
+#endif    // Español (México) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (España, alfabetización internacional) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Español (España, alfabetización internacional) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

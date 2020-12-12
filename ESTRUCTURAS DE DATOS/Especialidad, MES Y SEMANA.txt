@@ -1,0 +1,9 @@
+Nombre del Paciente:	dsadad  dsdad
+Nombre del Medico:	asd
+Especialidad:	dasd
+Fecha:	miércoles, 11 de noviembre de 2020
+hora:	08	minutos	00
+Consultorio:	2
+Telefono Paciente:	23412342
+Estado:	En revision
+--------------------------------------------------------------

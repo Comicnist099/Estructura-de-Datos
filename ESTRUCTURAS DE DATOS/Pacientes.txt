@@ -1,0 +1,8 @@
+Nombre del Paciente:	dsdad
+Fecha Naciemiento :	09/11/2020
+Genero:	Masculino
+Edad	2
+Telefono	23412342
+Medico Recomendado:	asd
+Descripcion:	asdd
+--------------------------------------------------------------
